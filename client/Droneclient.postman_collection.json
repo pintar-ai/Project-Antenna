@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "e575036d-9477-4e26-ab27-248c5bb049df",
+		"name": "Droneclient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Activate Debug Mode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"debug\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/debug",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"debug"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send LLH",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"longitude\": \"101.7148483\",\n    \"latitude\": \"3.1857072\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/llh",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"llh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Sensors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"altitude\": \"2\",\n    \"temperature\": \"35\",\n    \"pressure\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/sensors",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
